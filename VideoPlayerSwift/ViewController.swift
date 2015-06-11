@@ -25,8 +25,6 @@ class ViewController: UIViewController ,UIImagePickerControllerDelegate ,UINavig
     
     @IBOutlet var vwVideoView: UIView!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -35,9 +33,7 @@ class ViewController: UIViewController ,UIImagePickerControllerDelegate ,UINavig
         chooseVideoButton.backgroundColor = UIColor.greenColor()
         chooseVideoButton.layer.cornerRadius = 5.0
         chooseVideoButton.layer.borderColor = UIColor.whiteColor().CGColor
-        
         vwVideoView.layer.cornerRadius = 8.0
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,23 +49,11 @@ class ViewController: UIViewController ,UIImagePickerControllerDelegate ,UINavig
         var kUTTypeMovieAnyObject : AnyObject = kUTTypeMovie as AnyObject
         ipcVideo.mediaTypes = [kUTTypeMovieAnyObject]
         self.presentViewController(ipcVideo, animated: true, completion: nil)
-        
-        
-        
     }
 
-    
-    
-    
     func imagePickerController(picker: UIImagePickerController,didFinishPickingImage image: UIImage! ,didFinishPickingMediaWithInfo info: NSDictionary)
     {
-        
-         urlVideo  = info.objectForKey(UIImagePickerControllerMediaURL) as! NSURL
-       
-        // var urlVideo :NSURL = NSURL()
-        
-      //  var  urlVideo :NSURL = info[UIImagePickerControllerMediaURL] as! NSURL
-        
+        urlVideo  = info.objectForKey(UIImagePickerControllerMediaURL) as! NSURL
         self.dismissViewControllerAnimated(true, completion: nil)
         
         objMoviePlayerController = MPMoviePlayerController(contentURL: urlVideo)
@@ -84,9 +68,5 @@ class ViewController: UIViewController ,UIImagePickerControllerDelegate ,UINavig
         objMoviePlayerController.prepareToPlay()
         objMoviePlayerController.play()
     }
-  
-    
-    
-    
 }
 
