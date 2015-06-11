@@ -13,6 +13,7 @@
 		4B971AFE1B2802FF009FB0F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B971AFD1B2802FF009FB0F7 /* Images.xcassets */; };
 		4B971B011B2802FF009FB0F7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B971AFF1B2802FF009FB0F7 /* LaunchScreen.xib */; };
 		4B971B0D1B2802FF009FB0F7 /* VideoPlayerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B971B0C1B2802FF009FB0F7 /* VideoPlayerSwiftTests.swift */; };
+		4B971B171B28031D009FB0F7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B971B161B28031D009FB0F7 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		4B971B061B2802FF009FB0F7 /* VideoPlayerSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoPlayerSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B971B0B1B2802FF009FB0F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B971B0C1B2802FF009FB0F7 /* VideoPlayerSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerSwiftTests.swift; sourceTree = "<group>"; };
+		4B971B161B28031D009FB0F7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B971B171B28031D009FB0F7 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		4B971AE81B2802FF009FB0F7 = {
 			isa = PBXGroup;
 			children = (
+				4B971B161B28031D009FB0F7 /* MediaPlayer.framework */,
 				4B971AF31B2802FF009FB0F7 /* VideoPlayerSwift */,
 				4B971B091B2802FF009FB0F7 /* VideoPlayerSwiftTests */,
 				4B971AF21B2802FF009FB0F7 /* Products */,
